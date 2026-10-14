@@ -25,9 +25,21 @@ Resource: NSAppTransportSecurity - https://developer.apple.com/documentation/bun
 
 ## Networking
 
+IPv6 is the successor to IPv4. IPv4 addresses are 32 bits, while IPv6 addresses are 128 bits. IPv6 simplifies the packet header by removing some IPv4 fields or making them optional. Its larger address space supports many more devices. IPv4 provides about 4.3 billion addresses, which is not enough for growing demand. For a government assistant serving millions of citizens, IPv6 helps support more connected devices.
+
+Resource: RFC 8200: Internet Protocol, Version 6 (IPv6) Specification - https://www.rfc-editor.org/rfc/rfc8200
+
 ## Cybersecurity
 
+Prompt injection happens when input changes an AI assistant’s behavior unexpectedly. Direct injection comes from user input, intentionally or accidentally. Indirect injection comes from external sources, such as websites or files. For example, a government assistant may read a document with hidden instructions to reveal citizens’ private data. To reduce risk, developers should separate untrusted content from trusted instructions and limit the assistant’s permissions. These methods reduce risk but cannot eliminate it.
+
+Resource: LLM01:2025 Prompt Injection - https://genai.owasp.org/llmrisk/llm01-prompt-injection/
+
 ## Data
+
+Pseudonymisation replaces names with codes, while keeping the extra identifying information separately and securely. The data remains personal data, so GDPR still applies. For example, a government chatbot may replace a citizen’s name with “User123”, but messages may still reveal their identity through an address or ID number. Anonymisation removes identifying details so people cannot reasonably be identified. Truly anonymous data falls outside GDPR.
+
+Resource: Regulation (EU) 2016/679 - https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32016R0679
 
 ## Misconception in My Track
 
