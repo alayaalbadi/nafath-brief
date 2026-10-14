@@ -43,4 +43,8 @@ Resource: Regulation (EU) 2016/679 - https://eur-lex.europa.eu/legal-content/EN/
 
 ## Misconception in My Track
 
+A common misconception about Semantic Versioning is that marking a feature as deprecated requires a MAJOR version increase. However, item 7 under “Semantic Versioning Specification (SemVer)” states that marking public API functionality as deprecated requires a MINOR version increase. Item 8 says MAJOR must increase when a change breaks backward compatibility. For example, a government assistant can announce that an old API endpoint is deprecated in a MINOR release before removing it in a future MAJOR release. The FAQ entry “How should I handle deprecating functionality?” supports this.
+
 ## Open Question
+
+How should a government entity inform application developers that an API endpoint is deprecated, and how much time should it give them to update their applications before the endpoint is removed?
